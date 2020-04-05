@@ -12,13 +12,9 @@
 
 #### 遇到的问题
 在实现的过程中遇到了几个问题<br>
-0.什么时候整个Widget渲染完成
-
->`WidgetsBinding.instance.addPostFrameCallback(FrameCallback callback)`
->Widget 渲染完成的时候调用callback
 
 1.显示`气泡`的时候`findrenderobject' was called on null`
->解决办法:添加`PostFrameCallback` ,我在代码里面有描述
+>解决办法:添加`PostFrameCallback` ,我在代码里面有描述`WidgetsBinding.instance.addPostFrameCallback(FrameCallback callback)`Widget 渲染完成的时候调用callback
 
 2.在`push`到充值页面的时候`气泡`还是显示在屏幕上(蛋疼问题)
 3.在界面展示`弹框`的时候, 展示的`弹框`并没有覆盖住`气泡`
